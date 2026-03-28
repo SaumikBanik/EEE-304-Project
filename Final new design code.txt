@@ -381,11 +381,11 @@ motor_led ml (
  .current_floor(floor),
  .led(LED[3:0])
 );
- assign LED[4]     = door_open;
- assign LED[5]     = moving;
- assign LED[6]     = direction;
- assign LED[7]     = SW[8];
- assign LED[11:8]  = 4'b0;
+ assign LED[4] = door_open;
+ assign LED[5] = moving;
+ assign LED[6] = direction;
+ assign LED[7] = SW[8];
+ assign LED[11:8] = 4'b0;
  assign LED[15:12] = requests_total;
 
 seven_seg ss (
